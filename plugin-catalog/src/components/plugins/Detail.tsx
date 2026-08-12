@@ -457,7 +457,6 @@ export function PluginDetail() {
         setSelectedVersion(prev => prev || enrichedPluginData.version);
       }
 
-      fetchStatus();
     };
 
     initialize();
