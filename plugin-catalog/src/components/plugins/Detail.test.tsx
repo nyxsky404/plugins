@@ -146,6 +146,7 @@ describe('PluginDetail', () => {
         'Test Plugin',
         'https://artifacthub.io/packages/headlamp/test-repo/test-plugin/1.0.0'
       );
+      // Initial page load, action start, then completion reload should not duplicate status polling.
       expect(mockFetch).toHaveBeenCalledTimes(3);
       expect(mockGetStatus).toHaveBeenCalledTimes(1);
     });
